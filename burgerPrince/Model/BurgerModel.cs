@@ -13,6 +13,7 @@ namespace burgerPrince.Model
         public BurgerModel()
             : base("name=BurgerModel")
         {
+
         }
 
         public virtual DbSet<Meat> BurgersMeat { get; set; }
