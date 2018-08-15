@@ -8,8 +8,6 @@ namespace burgerPrince.Model.Meat_
 {
     public class Beef : Meat
     {
-        public string Name { get; set; }           
-        public float Price { get; set; }
         public Beef(string name, float price)
         {
             Name = "Beef "+name;

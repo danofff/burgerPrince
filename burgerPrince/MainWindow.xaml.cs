@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using burgerPrince.Model;
 
 namespace burgerPrince
 {
@@ -23,6 +24,11 @@ namespace burgerPrince
         public MainWindow()
         {
             InitializeComponent();
+            BurgerModel burgers = new BurgerModel();
+
+            burgers.BurgersBun.Add(new Model.Burger_.Bun("seeds", 0.99f));
+
+            burgers.SaveChanges();
         }
     }
 }
