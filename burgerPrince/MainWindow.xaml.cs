@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using burgerPrince.Model;
+using burgerPrince.Model.CashMachine_;
 
 namespace burgerPrince
 {
@@ -21,14 +22,13 @@ namespace burgerPrince
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static BurgerModel burgersBuild;
+        public CashMachine mainMachine;
         public MainWindow()
         {
-            InitializeComponent();
-            BurgerModel burgers = new BurgerModel();
-
-            burgers.BurgersBun.Add(new Model.Burger_.Bun("seeds", 0.99f));
-
-            burgers.SaveChanges();
+            InitializeComponent();          
+            burgersBuild = new BurgerModel();
+            mainFrame.Source = new Uri(@"View\OrderPage.xaml", UriKind.RelativeOrAbsolute);
         }
     }
 }
