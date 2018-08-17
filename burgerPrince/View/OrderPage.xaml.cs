@@ -26,5 +26,9 @@ namespace burgerPrince.View
             this.Background = new ImageBrush();
 
         }
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

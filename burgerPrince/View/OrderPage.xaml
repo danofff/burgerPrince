@@ -11,8 +11,102 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Additions/background_burgers.jpg"/>
+            <ImageBrush ImageSource="/Resources/background_burgers.jpg"/>
         </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label
+            Name="Header"
+            Content="BurgerPrince"
+            Foreground="White"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="50"
+            FontFamily="Broadway"
+            ></Label>
         
+        <Label
+            Name="Bun"
+            Content="Bun"
+            Foreground="White"
+            Grid.Row="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            FontSize="40"
+            FontFamily="Broadway"
+            Margin="0 0 20 0"></Label>
+        
+        <Label
+            Name="Meat"
+            Content="Meat"
+            Foreground="White"
+            Grid.Row="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            FontSize="40"
+            FontFamily="Broadway"
+            Margin="0 0 20 0"></Label>
+
+        <Label
+            Name="Cheese"
+            Content="Cheese"
+            Foreground="White"
+            Grid.Row="3"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            FontSize="40"
+            FontFamily="Broadway"
+            Margin="0 0 20 0"></Label>
+        <Label
+            Name="Vegetables"
+            Content="Vegetables"
+            Foreground="White"
+            Grid.Row="4"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            FontSize="40"
+            FontFamily="Broadway"
+            Margin="0 0 20 0"></Label>
+        <Label
+            Name="Total"
+            Content="Total"
+            Foreground="White"
+            Grid.Row="5"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            FontSize="40"
+            FontFamily="Broadway"
+            Margin="0 0 20 0"></Label>
+
+        <Button
+            Name="Submit"
+            Grid.Row="6"
+            Background="Black"
+            BorderBrush="White"
+            BorderThickness="10"
+            Width="200"
+            Height="60"
+            Content="SUBMIT"
+            FontFamily="Broadway"
+            Foreground="White"
+            FontSize="40"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Margin="0 0 20 0"
+            Click="Submit_Click"></Button>
     </Grid>
 </Page>
